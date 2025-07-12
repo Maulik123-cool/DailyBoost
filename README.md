@@ -1,76 +1,37 @@
-# DailyBoost
+## Simple Shooter Game
+A fun and easy-to-play 2D shooting game built with HTML, CSS, and JavaScript. Move your player left and right and shoot incoming enemies to score points!
 
-Tired of jumping between apps just to stay productive?
-DailyBoost brings together your daily essentials into one simple, beautiful place — right in your browser. Whether you're planning your day, timing your tasks, jotting down ideas, checking the weather, or just looking for some inspiration — it's all here in one clean toolkit.
+## Features
+Move the player left and right using arrow keys ← → or A D
 
-# 🌟 Amazing Tools Website
+Shoot bullets with the space bar
 
-Welcome to your all-in-one **productivity and fun hub**! This is a beautiful, multi-tool website built using just HTML, CSS, and JavaScript — and it's fully hosted on **GitHub Pages**.
+Enemies spawn at the top and move downwards
 
----
+Shoot enemies to earn points
 
-## 🔥 What Can You Do Here?
+The game gradually speeds up as you score more
 
-- ✅ Manage tasks with a To-Do List
-- ⏳ Stay focused using a Pomodoro Timer
-- 📌 Take quick Notes that auto-save
-- 💡 Get inspired with Daily Quotes
-- 🌦️ Check real-time Weather using an API
+Clean and simple design for easy playability
 
----
+## How to Play
+Open index.html in any modern web browser.
 
-## 🚀 Why This Project?
+Use the left and right arrow keys or A and D keys to move your player horizontally.
 
-Most websites are either boring or too simple. This one combines:
-- **Daily-use tools** for productivity
-- A super clean, colorful design
-- **Zero backend** – works fully offline (except weather API)
+Press the space bar to shoot bullets upwards.
 
-Great for personal use, showcasing your portfolio, or just impressing your friends!
+Shoot the red enemy blocks before they reach the bottom of the screen.
 
----
+Every enemy you destroy increases your score.
 
-## 🛠️ How It Works
+The enemies get faster as you progress, making the game more challenging.
 
-- Built with **HTML/CSS/JS** only (no frameworks)
-- Each tool is its own page
-- Uses `localStorage` to remember tasks and notes
-- Weather tool fetches live data from OpenWeatherMap
-
----
-
-## 🌐 Live Demo
-
-You can deploy it using **GitHub Pages**:
-
-1. Push this repo to GitHub
-2. Go to **Settings > Pages**
-3. Select the `main` branch and `/ (root)`
-4. Visit your published link!
-
----
-
-## 📁 Folder Structure
-
-.
-├── index.html # Home page with tool buttons
-├── style.css # Global styles
-├── /tools/ # Each tool lives here
-│ ├── todo.html
-│ ├── pomodoro.html
-│ ├── notes.html
-│ ├── quote.html
-│ └── weather.html
-
-yaml
+## Project Structure
+graphql
 Copy
 Edit
-
----
-
-## 💡 Future Ideas
-
-- Add a calculator
-- Add a password generator
-- Add a journal with themes
-- Add sound effects or background music 🎵
+/ (project root)
+├── index.html      # Main HTML file with game canvas and UI
+├── style.css       # Styling for the page and game area
+└── script.js       # JavaScript game logic, controls, rendering, and updates
