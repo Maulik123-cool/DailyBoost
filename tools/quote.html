@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Quote</title>
+  <script>
+    async function getQuote() {
+      const res = await fetch("https://api.quotable.io/random");
+      const data = await res.json();
+      document.getElementById("quote").textContent = `"${data.content}" — ${data.author}`;
+    }
+    window.onload = getQuote;
+  </script>
+</head>
+<body>
+  <h2>💡 Daily Quote</h2>
+  <p id="quote">Loading...</p>
+  <button onclick="getQuote()">New Quote</button>
+</body>
+</html>
