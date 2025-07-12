@@ -1,4 +1,7 @@
-# Useful-Daily-Tools
+# DailyBoost
+
+Tired of jumping between apps just to stay productive?
+DailyBoost brings together your daily essentials into one simple, beautiful place — right in your browser. Whether you're planning your day, timing your tasks, jotting down ideas, checking the weather, or just looking for some inspiration — it's all here in one clean toolkit.
 
 # 🌟 Amazing Tools Website
 
