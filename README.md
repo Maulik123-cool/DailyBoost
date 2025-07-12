@@ -1,11 +1,12 @@
 ## Simple Shooter Game
 A fun and easy-to-play 2D shooting game built with HTML, CSS, and JavaScript. Move your player left and right and shoot incoming enemies to score points!
 
-![Uploading image.png…]()
+<img width="658" height="1135" alt="Screenshot 2025-07-12 150106" src="https://github.com/user-attachments/assets/0b44e92d-1b31-4091-9170-1e4be8b2da0a" />
 
-![Uploading image.png…]()
+<img width="711" height="1125" alt="Screenshot 2025-07-12 150140" src="https://github.com/user-attachments/assets/9de3ac94-f6fe-41fa-b2cc-cc33822379db" />
 
-![Uploading image.png…]()
+<img width="662" height="1074" alt="Screenshot 2025-07-12 150155" src="https://github.com/user-attachments/assets/db57652e-c157-47d4-9cd7-089eaf8b1519" />
+
 
 ## Features
 Move the player left and right using arrow keys ← → or A D
