@@ -42,3 +42,6 @@ Edit
 ├── index.html      # Main HTML file with game canvas and UI
 ├── style.css       # Styling for the page and game area
 └── script.js       # JavaScript game logic, controls, rendering, and updates
+
+## Important
+If you wanna play the game again just refresh and your good to go!
