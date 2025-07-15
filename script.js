@@ -67,8 +67,6 @@ function update() {
   // Move player
   if (keys["ArrowLeft"] || keys["a"]) player.x -= player.speed;
   if (keys["ArrowRight"] || keys["d"]) player.x += player.speed;
-
-  // Keep player in bounds
   player.x = Math.max(0, Math.min(canvas.width - player.width, player.x));
 
   // Move bullets
@@ -77,28 +75,34 @@ function update() {
     if (b.y < 0) bullets.splice(i, 1);
   });
 
-  // Move enemies
-  enemies.forEach((e, ei) => {
+  // Move enemies and check death conditions
+  for (let ei = enemies.length - 1; ei >= 0; ei--) {
+    const e = enemies[ei];
     e.y += e.speed;
 
-    // Collision with player = Game Over
+    // Die if enemy hits player
     if (isColliding(e, player)) {
       gameOver = true;
+      break;
     }
 
-    // Collision with bullets = Destroy enemy
-    bullets.forEach((b, bi) => {
-      if (isColliding(b, e)) {
+    // Die if enemy reaches bottom
+    if (e.y + e.height >= canvas.height) {
+      gameOver = true;
+      break;
+    }
+
+    // Check bullet collision
+    for (let bi = bullets.length - 1; bi >= 0; bi--) {
+      if (isColliding(bullets[bi], e)) {
         enemies.splice(ei, 1);
         bullets.splice(bi, 1);
         score++;
         document.getElementById("score").innerText = score;
+        break;
       }
-    });
-
-    // Remove if off screen
-    if (e.y > canvas.height) enemies.splice(ei, 1);
-  });
+    }
+  }
 }
 
 function draw() {
